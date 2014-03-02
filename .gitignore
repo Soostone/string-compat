@@ -1,0 +1,6 @@
+*DS*
+dist
+*.jsmod
+*.js
+*.hi
+*.o

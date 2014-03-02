@@ -1,0 +1,31 @@
+name:                string-compat
+version:             0.1.0.0
+synopsis:            Mimic text and bytestring with a pure list-based implementation
+-- description:         
+license:             BSD3
+license-file:        LICENSE
+author:              Ozgun Ataman
+maintainer:          ozgun.ataman@soostone.com
+copyright:           Soostone Inc
+category:            Data
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     
+    Data.ByteString
+    Data.ByteString.Char8
+    Data.ByteString.Lazy
+    Data.ByteString.Lazy.Char8
+    Data.Text
+    Data.Text.Encoding
+    Data.Text.Lazy
+  other-modules:       
+    ListBased
+    Types
+  build-depends:       
+      base >=4.6 && <4.7
+    , split >=0.2 && <0.3
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+
