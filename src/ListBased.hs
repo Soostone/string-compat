@@ -1,3 +1,4 @@
+{-# LANGUAGE NoMonomorphismRestriction #-}
 
 module ListBased where
 
@@ -11,5 +12,6 @@ pack = id
 unpack = id
 intercalate = List.intercalate
 split = Split.splitWhen
+splitOn = Split.splitOn
 append = (++)
 null = List.null
