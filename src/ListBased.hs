@@ -15,3 +15,7 @@ split = Split.splitWhen
 splitOn = Split.splitOn
 append = (++)
 null = List.null
+map = List.map
+filter = List.filter
+head = List.head
+tail = List.tail
